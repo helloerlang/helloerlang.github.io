@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Hello, Erlang! - is a show focused on the Erlang programming community. We discuss topics related to the BEAM and the Erlang Ecosystem with exceptional engineers that will share their knowledge and experience with you.">
+    <meta name="keywords" content="Erlang, Erlang/OTP, Erlang podcast, Hello, Erlang!">
     <meta name="author" content="Hello, Erlang!">
     <meta name="generator" content="Hugo 0.88.1">
     <title>Hello, Erlang!</title>
@@ -13,43 +14,182 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Carousel styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
+
   </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
+  <body>
 
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="mb-auto">
-        <div>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
           <a class="logo-link" href="http://helloerlang.github.io/">
-            <h3 class="float-md-start mb-0">
-                <img class="align-items-center logo" src="img/logo.png" alt="Hello, Erlang!">
-                Hello, Erlang!
-            </h3>
+            <img class="align-items-center logo" src="img/logo.png" alt="Hello, Erlang!">
           </a>
-          <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Contact</a>
-          </nav>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </header>
+      </nav>
+    </header>
 
-      <main class="px-3">
-        <h1>Hello, Erlang!</h1>
-        <p class="lead">
-          Hello, Erlang! - is a show focused on the Erlang programming community.
-          We discuss topics related to the BEAM and the Erlang Ecosystem with exceptional engineers that will share their knowledge and experience with you.
-        </p>
-        <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
-        </p>
-      </main>
+    <main>
 
-      <footer class="mt-auto text-white-50">
-        <p>&copy; 2022 <a href="https://github.com/helloerlang" class="text-white">Hello, Erlang!</a></p>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Hello, Erlang!</h1>
+                <p>Hello, Erlang! - is a show focused on the Erlang programming community. We discuss topics related to the BEAM and the Erlang Ecosystem with exceptional engineers that will share their knowledge and experience with you.</p>
+                <p><a class="btn btn-lg btn-primary" href="https://twitter.com/HelloErlang" target="_blank">Twitter</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>We want invite you all!</h1>
+                <p>We will invite you all folks to ask be our guests in our episodes.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Regular episodes!</h1>
+                <p>Episodes will be released at regular intervals of 1-2 weeks!</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="img/Brujo.png" alt="Brujo (Fernando) Benavides">
+
+            <h2>Brujo</h2>
+            <p>🧙‍♂️ Oxbow Code Killer 🔥</p>
+            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="img/Adolfo.jpeg" alt="Adolfo Neto">
+
+            <h2>Adolfo</h2>
+            <p>Associate Professor at UTFPR, Software Developer and Podcaster! 😎</p>
+            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="img/Slava.jpeg" alt="Viacheslav Katsuba">
+
+            <h2>Slava</h2>
+            <p>Ukrainian Erlanger! 🤘</p>
+            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Episode #0: <span class="text-muted">Slava & Adolfo</span></h2>
+            <p class="lead">In the first episode of the "Hello, Erlang!" podcast you will meet the hosts and learn a little more about them!</p>
+          </div>
+          <div class="col-md-5">
+            <a href="https://anchor.fm/helloerlang/episodes/Episode-0-Slava-and-Adolfo-e1e7f78" target="_blank">
+              <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="img/logo.png" alt="Episode #0">
+            </a>
+
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Episode #1: <span class="text-muted">is coming...</span></h2>
+            <p class="lead">Publication expected February 17, 2022!</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="img/logo.png" alt="Episode #1">
+
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Episode #2: <span class="text-muted">is coming...</span></h2>
+            <p class="lead">.......</p>
+          </div>
+          <div class="col-md-5">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="img/logo.png" alt="Episode #2">
+
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>&copy; 2022 Helo, Erlang! &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
-    </div>
+    </main>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
 
   </body>
 </html>
