@@ -20,6 +20,10 @@ iframe {
   border-radius: 0;
 }
 
+.custom-h2 {
+  margin-top: 7rem;
+}
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
